@@ -1,0 +1,9 @@
+{
+  "hi": "Hello",
+  "bye": "Goodbye",
+  "nested": { "value": "Test" },
+  "something": {
+    "inside": { "value": "inseption" },
+    "different": "Different"
+  }
+}

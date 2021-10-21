@@ -1,0 +1,81 @@
+{
+    "extends": [
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+      "camelcase": "off", // see ts specific rule
+      "class-methods-use-this": "warn",
+      "default-case": "warn",
+      "import/named": "off",
+      "import/order": "off",
+      "@typescript-eslint/explicit-module-boundary-types": ["warn"],
+      "import/prefer-default-export": "off",
+      "lines-between-class-members": "off",
+      "no-await-in-loop": "warn",
+      "no-console": "warn",
+      "no-return-assign": "off",
+      "no-empty-function": ["error", { "allow": ["constructors"] }],
+      "no-param-reassign": "error",
+      "no-prototype-builtins": "off",
+      "no-shadow": "off", // see ts specific rule,
+      "no-underscore-dangle": [
+        "warn",
+        {
+          "allowAfterThis": true,
+          "allowFunctionParams": true
+        }
+      ],
+      "no-use-before-define": "off", // see ts specific rule
+      "no-useless-constructor": "off", // see ts specific rule
+      "prefer-destructuring": "off",
+      "@typescript-eslint/ban-types": "error",
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "selector": "default",
+          "format": ["camelCase", "PascalCase"],
+          "leadingUnderscore": "allow"
+        },
+        {
+          "selector": "variable",
+          "modifiers": ["const"],
+          "format": ["camelCase", "UPPER_CASE"],
+          "leadingUnderscore": "allow"
+        },
+        {
+          "selector": "property",
+          "format": ["camelCase", "UPPER_CASE"],
+          "leadingUnderscore": "allow"
+        }
+      ],
+      "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/no-shadow": ["error", { "ignoreTypeValueShadow": true }],
+      "@typescript-eslint/no-this-alias": [
+        "error",
+        {
+          "allowDestructuring": true
+        }
+      ],
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-use-before-define": "warn",
+      "@typescript-eslint/no-useless-constructor": "error"
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".ts"]
+        }
+      }
+    }
+  }
