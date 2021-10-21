@@ -1,0 +1,9 @@
+{
+  "hi": "Привіт",
+  "bye": "Па-па",
+  "nested": { "value": "Просто тест" },
+  "something": {
+    "inside": { "value": "інсепшн" },
+    "different": "інше"
+  }
+}
